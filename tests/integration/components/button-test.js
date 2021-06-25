@@ -8,7 +8,7 @@ import click from '@ember/test-helpers/dom/click';
 module('Integration | Component | button', function (hooks) {
   setupRenderingTest(hooks);
 
-  module('error event listener on window', () => {
+  module('monkey-patch QUnit', () => {
     test('sync version', async function (assert) {
       // Neither `assert.rejects` nor `setupOnerror` utility provided by
       // `@ember/test-helpers` works for this case.
